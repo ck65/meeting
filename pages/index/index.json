@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "会议平台",
+  "usingComponents": {
+    "zan-card": "../dist/card/index"
+  }
+}

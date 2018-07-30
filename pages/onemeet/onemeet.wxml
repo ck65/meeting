@@ -1,0 +1,42 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<view hidden="{{currentTab!==0}}">
+  <image class='image' src='http://confplus.ccnu.edu.cn/sucpc/resource/img/meeting-pic.png'></image>
+  <view class='title'>第十四届中美华人化学教授会议</view>
+  <view class='title2'>会议简介</view>
+  <text class='text' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第十四届华人化学教授会议定于2018年6月20 - 23日在湖北省武汉市召开。本系列会议由Chinese-American Chemistry & Chemical Biology Professors Association (CAPA)发起，旨在化学领域的旅美华人教授与国内化学教授们基于相互之间加强学术交流、增加合作契机、加深彼此友谊而举办的一年一度的高层次学术交流会议。本届会议与“在美华人化学与化学生物学教授协会”合作，由华中师范大学化学学院农药与化学生物学教育部重点实验室承办。 </text>
+  <view class='title2' decode="{{true}}">会议主题</view>
+  <text class='text' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;会议主题是“化学 — 创造美好生活”，主要包括有机合成化学，化学生物学和有机功能材料等研究领域，就其研究进展、发展趋势和热点问题等展开充分交流。</text>
+  <view class='title2' decode="{{true}}">参会嘉宾</view>
+  <view class="content">
+    <view class="style">
+      <view class="name">Prof. Shelley D. Minteer</view>
+      <view class="name">JACS 副主编</view>
+      <image class="style2" src='http://confplus.ccnu.edu.cn/zxbwj/uploads/head_icon/804a1ec4c90b08accca24e6ea49c5b04.jpg'></image>
+    </view>
+      <view class="style" bindtap='zhuye'>
+        <view class="name">Prof. Shelley D. Minteer</view>
+        <view class="name">JACS 副主编</view>
+        <image class="style2" src='http://confplus.ccnu.edu.cn/zxbwj/uploads/head_icon/804a1ec4c90b08accca24e6ea49c5b04.jpg'></image>
+      </view>
+  </view>
+</view>
+<view hidden="{{currentTab!==1}}">
+  <view class="content">
+    <view class="style">
+      <view class="name">Prof. Shelley D. Minteer</view>
+      <view class="name">JACS 副主编</view>
+      <image class="style2" src='http://confplus.ccnu.edu.cn/zxbwj/uploads/head_icon/804a1ec4c90b08accca24e6ea49c5b04.jpg'></image>
+    </view>
+      <view class="style" bindtap='zhuye'>
+        <view class="name">Prof. Shelley D. Minteer</view>
+        <view class="name">JACS 副主编</view>
+        <image class="style2" src='http://confplus.ccnu.edu.cn/zxbwj/uploads/head_icon/804a1ec4c90b08accca24e6ea49c5b04.jpg'></image>
+      </view>
+  </view>
+</view>
+
+<view hidden="{{currentTab!==2}}">
+  tab_03
+</view>

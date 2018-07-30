@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' class="swirp">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="photo" bindtap=''></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='search'>
+  <view class='searchInput'>
+    <input placeholder='输入关键字搜索' confirm-type='search' bindinput='inputValue'></input>
+    <icon style='align-self:center;margin-right:10rpx' type='search' size='20' bindtap='toDetail'></icon>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll">
+  <image class='chioce' src='../../images/111.png' data-type="物联网" bindtap='toDial'></image>
+  <image class='chioce' src='../../images/111.png' data-type="化学" bindtap='toDial'></image>
+  <image class='chioce' src='../../images/111.png' data-type="信息安全" bindtap='toDial'></image>
+  <image class='chioce' src='../../images/111.png' data-type="生物" bindtap='toDial'></image>
+  <image class='chioce' src='../../images/111.png' data-type="云计算" bindtap='toDial'></image>
+  <image class='chioce' src='../../images/111.png' data-type="人工智能" bindtap='toDial'></image>
+</scroll-view>
+<view wx:for="{{meeting}}" wx:key="id">
+  <view data-type="{{item.id}}" bindtap='onClick'>
+    <zan-card card-class="test-card" price="{{item.price}}" thumb="{{item.photo}}" title="{{item.title}}" desc="{{item.desc}}" status="{{item.palce}}">
+    </zan-card>
+  </view>
+</view>

@@ -1,0 +1,66 @@
+/**index.wxss**/
+
+.userinfo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.userinfo-avatar {
+   width: 128rpx;
+   height: 128rpx;
+   margin: 20rpx;
+   border-radius: 50%;
+}
+
+.userinfo-nickname {
+   color: #aaa;
+}
+
+.usermotto {
+   margin-top: 200px;
+}
+
+.photo {
+   width: 750rpx;
+   height: 400rpx;
+}
+
+.swirp {
+   height: 400rpx;
+}
+
+.scroll {
+   margin-top: 30rpx;
+   background: #0387fe;
+   height: 180rpx;
+   white-space: nowrap;
+}
+
+.chioce {
+   margin-top: 35rpx;
+   margin-left: 40rpx;
+   width: 45px;
+   height: 40px;
+   display: inline-block;
+}
+
+.search {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   align-items: center;
+}
+
+.searchInput {
+   display: flex;
+   background: #fff;
+   flex-direction: row;
+   border-radius: 20rpx;
+   margin-right: 20rpx;
+   margin-left: 20rpx;
+}
+
+.searchInput input {
+   width: 90%;
+}

@@ -1,0 +1,21 @@
+/* pages/meeting/meeting.wxss */
+.search {
+   width: 100%;
+   height: 80rpx;
+   align-items: center;
+   background: #dcdcdc;
+}
+
+.searchInput {
+   display: flex;
+   height: 60rpx;
+   background: #fff;
+   flex-direction: row;
+   border-radius: 20rpx;
+   margin-right: 20rpx;
+   margin-left: 20rpx;
+}
+
+.searchInput input {
+   width: 90%;
+}

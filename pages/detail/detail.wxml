@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<view wx:for='{{meeting}}'>
+ <zan-card card-class="test-card" price="999.99" thumb="http://confplus.ccnu.edu.cn/sucpc/resource/img/meeting-pic.png" title="{{item.title}}" desc="{{item.time}}" status="湖北武汉">
+</zan-card>
+</view>

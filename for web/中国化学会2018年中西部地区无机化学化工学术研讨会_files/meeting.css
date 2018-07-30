@@ -1,0 +1,1518 @@
+@charset 'UTF-8';
+
+
+/**
+ *
+ * @authors    ${winlily}
+ * @email    ${winlily@foxmail.com}
+ * @date    2017-05-04 20:08:48
+ * @version $Id$
+ */
+
+
+/* ----------------------------------自定义的公共样式部分/begin---------------------------------- */
+
+
+/* 设置左右模块top对齐 */
+
+
+/* .top-align{
+    margin-top: 29px;
+} */
+
+
+/* 分享 */
+
+.share>ul {
+    display: inline-block;
+}
+
+.share>ul>li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+/* 标题设置/字体加粗 */
+
+.text-strong {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* 按钮 */
+
+.btn_1295d8 {
+    color: #fff !important;
+    background-color: #1295d8;
+}
+
+.btn_1295d8:hover {
+    background-color: #1a81b5 !important;
+}
+
+
+
+/* 设置panel标题左边样式 */
+
+.panel-title {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-left: 5px solid #1295d8;
+}
+
+
+
+/* 自定义颜色设置 */
+
+._f00 {
+    /*红色*/
+    color: #f00;
+}
+
+._1295d8 {
+    /* 蓝色 */
+    color: #1295d8 !important;
+}
+
+.bg_1295d8 {
+    background-color: #1295d8 !important;
+}
+
+._ffb641 {
+    /* 黄色 */
+    color: #ffb641 !important;
+}
+
+.bg_ffb641 {
+    background-color: #ffb641 !important;
+}
+
+._29a69c {
+    /* 绿色 */
+    color: #29a69c !important;
+}
+
+.bg_29a69c {
+    background-color: #29a69c !important;
+}
+
+._df4d69 {
+    /* 红色 */
+    color: #df4d69 !important;
+}
+
+.bg_df4d69 {
+    background-color: #df4d69 !important;
+}
+
+._ddd {
+    /*  灰色*/
+    color: #ddd;
+}
+
+.bg_ddd {
+    background-color: #ddd !important;
+}
+
+._999 {
+    color: #999;
+}
+
+
+
+/* 块级按钮 */
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* 提示框下三角 */
+
+.register-upload-panel .triangle {
+    position: absolute;
+    top: 35px;
+    left: 220px;
+}
+
+.register-info-panel .triangle {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.triangle::before {
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 10px solid;
+}
+
+.triangle_1295d8::before {
+    border-color: #1295d8 transparent transparent transparent;
+}
+
+.triangle_ffb641::before {
+    border-color: #ffb641 transparent transparent transparent;
+}
+
+.triangle_29a69c::before {
+    border-color: #29a69c transparent transparent transparent;
+}
+
+.triangle_df4d69::before {
+    border-color: #df4d69 transparent transparent transparent;
+}
+
+
+
+/* 自定义dl仿table格式 */
+
+.dl-table {
+    width: auto;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    /*border-bottom: none;*/
+    /*margin-left: 1%;*/
+}
+
+.dl-table dl {
+    margin: 0;
+    text-align: center;
+}
+
+.dl-table dl dt {
+    padding: 10px 0;
+    /*background-color: #ddd;*/
+}
+
+.dl-table dl dd {
+    padding: 10px 0;
+}
+
+.dl-table>div {
+    padding: 0;
+}
+
+
+
+/* 修改bmd默认样式 */
+
+.form-group input[type=file] {
+    opacity: 1;
+    position: relative;
+    height: auto;
+}
+
+
+
+/* help帮助文档 */
+
+.use-help img {
+    width: 550px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* ----------------------------------自定义的公共样式部分/end---------------------------------- */
+
+body {
+    font-family: 'Helvetica Neue', helvetica, 'lucida grande', 'lucida sans unicode', lucida, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif !important;
+    line-height: 24px;
+    position: relative;
+    height: 100%;
+    color: #555 !important;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+dt {
+    font-weight: normal;
+}
+
+
+
+/* back-top 返回顶部按钮 */
+
+.back-top {
+    position: fixed;
+    right: 2%;
+    bottom: 4%;
+    display: none;
+    width: 45px;
+    height: 45px;
+    background-color: #1295d8;
+}
+
+.back-top img {
+    max-width: 45px;
+    height: auto;
+    padding: 10px;
+}
+
+
+
+/* navbar 导航*/
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+    background-color: #1295d8;
+    /*position: relative;*/
+}
+
+.navbar-brand {
+    padding: 0 15px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    margin: 10px 1px;
+    padding: 8px 30px;
+    background-color: #ffb641;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    background-color: #ff9f00 !important;
+}
+
+.nav.navbar-nav.navbar-right li:first-child {
+    margin-right: 10px;
+}
+
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-indicators li {
+    border: none;
+    background-color: #ffb641;
+}
+
+.carousel-indicators .active {
+    background-color: #ff9f00 !important;
+}
+
+
+
+/* carousel轮播*/
+
+
+/* 主体内容 */
+
+.main-content {
+    margin-top: 20px;
+}
+
+.main-content>.row>.col-lg-9 {
+    margin-top: 29px;
+}
+
+
+/* 赞助商列表展示 */
+
+.marquee-box {
+    margin: 15px 0;
+}
+
+.marquee-box .panel-body .marquee-content {
+    height: 1650px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.marquee-box .marquee-content li {
+    text-align: center;
+    display: block;
+    box-shadow: 0px 1px 1px #ddd;
+    padding: 8px 0;
+    margin: 10px;
+}
+
+.marquee-box .marquee-content img {
+    width: 200px;
+    /*height: 80px*/
+}
+
+
+/* 会议缩略图/简介模块 */
+
+.meeting-pic img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+
+
+/* 登录、注册、忘记密码 */
+
+.login-body {
+    height: 100%;
+    background-color: #fff;
+}
+
+.login-form .panel form .form-group {
+    margin: 0;
+}
+
+.login-body a {
+    color: #1295d8 !important;
+}
+
+.login-header {
+    max-height: 100px;
+    padding-top: 40px;
+    background-color: #fff;
+}
+
+.login-header img {
+    margin-bottom: 10px;
+}
+
+.login-bg {
+    background-color: #e5e5e5;
+}
+
+.login-bg .container {
+    padding: 50px 0;
+}
+
+#loginBtn,
+#newUser {
+    color: #fff;
+    background-color: #ffb641;
+}
+
+#loginBtn:hover,
+#newUser:hover {
+    background-color: #ff9f00 !important;
+}
+
+.login-header img {
+    width: auto;
+    max-height: 50px;
+}
+
+.login-footer {
+    margin-top: 20px;
+}
+
+.newUser-form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.newUser .login-header {
+    border-bottom: 2px solid #1295d8;
+}
+
+.newUser .login-form {
+    margin-top: 40px;
+}
+
+.newUser .login-form .panel-heading {
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px 0 5px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+}
+
+#register_form .form-group label {
+    position: absolute;
+    top: -10px;
+    left: 11%;
+    height: 10px;
+    /* left: 1em; */
+    text-align: center;
+    color: red;
+}
+
+
+
+/* 特邀嘉宾模块 */
+
+.border-1295d8 {
+    border-top: 1px solid #1295d8;
+    border-right: 1px solid rgba(153, 153, 153, .1) !important;
+    border-bottom: 1px solid rgba(153, 153, 153, .1) !important;
+    border-left: 1px solid rgba(153, 153, 153, .1) !important;
+}
+
+.border-1295d8:hover {
+    cursor: pointer;
+    border: 1px solid #1295d8 !important;
+}
+
+.border-ffb641 {
+    border-top: 1px solid #ffb641;
+    border-right: 1px solid rgba(153, 153, 153, .1) !important;
+    border-bottom: 1px solid rgba(153, 153, 153, .1) !important;
+    border-left: 1px solid rgba(153, 153, 153, .1) !important;
+}
+
+.border-ffb641:hover {
+    cursor: pointer;
+    border: 1px solid #ffb641 !important;
+}
+
+.border-29a69c {
+    border-top: 1px solid #29a69c;
+    border-right: 1px solid rgba(153, 153, 153, .1) !important;
+    border-bottom: 1px solid rgba(153, 153, 153, .1) !important;
+    border-left: 1px solid rgba(153, 153, 153, .1) !important;
+}
+
+.border-29a69c:hover {
+    cursor: pointer;
+    border: 1px solid #29a69c !important;
+}
+
+.border-df4d69 {
+    border-top: 1px solid #df4d69;
+    border-right: 1px solid rgba(153, 153, 153, .1) !important;
+    border-bottom: 1px solid rgba(153, 153, 153, .1) !important;
+    border-left: 1px solid rgba(153, 153, 153, .1) !important;
+}
+
+.border-df4d69:hover {
+    cursor: pointer;
+    border: 1px solid #df4d69 !important;
+}
+
+.professor-list .row .panel p {
+    margin: 0;
+    color: rgb(153, 153, 153);
+}
+
+.professor-list .row .panel img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+
+.meeting-property .meeting-present {
+    display: -webkit-box;
+    overflow: hidden;
+    height: 72px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.meeting-property ul li {
+    margin: 5px 10px;
+}
+
+.meeting-property ul li:first-child {
+    margin: 0 10px;
+}
+
+.panel-title a.news-more {
+    font-weight: normal;
+    color: #1295d8 !important;
+}
+
+.news-list {
+    padding-left: 10px;
+}
+
+.news-list>li {
+    margin: 8px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.news-list>li:hover {
+    border-bottom: 1px dotted #ffb641;
+}
+
+.news-list>li>a {
+    color: #555;
+}
+
+.news-list>li:hover a {
+    text-decoration: none;
+    color: #ffb641;
+}
+
+.important-date .panel-body ul {
+    text-align: center;
+}
+
+.important-date .panel-body ul li {
+    margin: 15px 0;
+}
+
+.important-date .panel-body ul li span:first-child {
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #1295d8;
+}
+
+.important-date .panel-body ul li span:last-child {
+    padding: 8px 15px;
+    background-color: #ccc;
+}
+
+
+
+/* footer页脚 */
+
+.footer {
+    padding: 20px 0;
+    color: #fff;
+    background-color: #3c3b3b;
+}
+
+.footer ul {
+    display: inline-block;
+    margin: 20px 25px;
+}
+
+.footer ul a {
+    color: #fff;
+}
+
+.footer ul a:hover {
+    color: #ccc;
+}
+
+.footer .text-center img {
+    max-width: 18%;
+    height: auto;
+    margin: 20px;
+}
+
+.footer .text-center p {
+    margin: 0;
+}
+
+
+
+/* detail详情页 */
+
+.navstrip {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.navstrip img {
+    max-width: 100%;
+    height: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #1295d8;
+}
+
+
+
+/*首页/会议注册/注册流程/信息提示 */
+
+.info-notification .panel-body {
+    font-size: 12px;
+    color: #999;
+}
+
+.info-notification .panel-body ul li p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+/* stpe状态 / 激活状态*/
+
+.step-active {
+    color: #1295d8;
+}
+
+.step-active::before {
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 10px 14px;
+    content: '';
+    color: #fff;
+    border-radius: 50%;
+    background-color: #1295d8;
+}
+
+
+
+/* stpe状态 / 未激活状态*/
+
+.step-inactive::before {
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 10px 14px;
+    content: '';
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.shopping-cart>thead {
+    color: #fff;
+    background-color: #1295d8;
+}
+
+.shopping-cart thead>tr>th {
+    text-align: center;
+    vertical-align: middle;
+    border: none !important;
+}
+
+.shopping-cart tbody>tr>td {
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.shopping-cart tbody>tr>td>p {
+    margin: 0;
+}
+
+.shopping-cart tbody>tr>td>p:last-child {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.shopping-cart tbody>tr>td:last-child i {
+    font-size: 1px;
+    margin: 10px;
+    padding: 10px;
+    color: #1295d8;
+    color: #fff;
+    border-radius: 3px;
+    background: #1295d8;
+}
+
+.shopping-cart tbody>tr>td:last-child input {
+    max-width: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart tbody>tr>td:last-child span {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+/* 第一步/录入参会人员信息 */
+
+.info-notification .register-info p:first-child::before {
+    content: '1';
+}
+
+.info-notification .register-info img {
+    height: 120px;
+    margin: 13px;
+    margin-right: 23px;
+}
+
+.register-panel .form-control,
+.register-panel .form-group label {
+    font-size: 14px;
+    padding-top: 11px;
+}
+
+.register-panel .form-group input::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+.register-panel .panel-heading .panel-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-left: 10px;
+    text-align: center;
+    color: #fff;
+    border-left: none;
+}
+
+.register-panel .row .panel {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.register-panel .row .panel .panel-heading {
+    border: none;
+    border-radius: 0;
+}
+
+.register-panel .row .panel .panel-body {
+    border: 1px solid #d2d2d2;
+    border-top: none;
+}
+
+.register-panel .register-info-panel {
+    padding: 22px 30px;
+}
+
+.register-panel .register-info-panel>.row>div {
+    padding: 0 8px;
+}
+
+.register-info-panel .form-group {
+    margin: 0;
+}
+
+
+
+/* 第二步/上传缴费凭证 */
+
+.info-notification .register-upload p:first-child::before {
+    content: '2';
+}
+
+.info-notification .register-upload img {
+    height: 120px;
+    margin: 13px;
+    margin-right: 23px;
+}
+
+.total-price dt {
+    background-color: #ddd;
+}
+
+
+
+/* 第三步/注册成功 */
+
+.info-notification .register-success p:first-child::before {
+    content: '3';
+}
+
+.register-upload-panel .row .panel-body .row {
+    width: 98%;
+    margin-left: 1%;
+    border-bottom: 1px solid #ddd;
+}
+
+.register-upload-left {
+    margin: 20px 0;
+    padding: 0;
+    border-right: 1px solid #ddd;
+}
+
+.register-upload-left p {
+    margin: 0;
+}
+
+.register-upload-left::before {
+    font-size: 14px;
+    float: left;
+    margin: 6px 10px;
+    padding: 6px 10px;
+    content: attr(data-index);
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.register-upload-right {
+    margin: 20px 0 20px 56px;
+    padding: 0;
+}
+
+.register-upload-right p {
+    margin: 0;
+}
+
+
+
+/* 总计 */
+
+.total-price .panel {
+    line-height: 30px;
+    min-height: 30px;
+    text-align: center;
+    color: #f00;
+    background-color: #ddd;
+}
+
+.total-price .panel .panel-body {
+    padding: 0;
+}
+
+
+
+/*.register-upload-certificate .panel-body i {
+    font-size: 64px;
+    color: #1295d8;
+}*/
+
+.register-upload-certificate .panel-body {
+    border: 1px solid #d2d2d2 !important;
+}
+
+.btn-next {
+    /*left: 50%;*/
+    /*margin-left: -18px;*/
+    color: #fff !important;
+    background-color: #ffb641;
+}
+
+.btn-next:hover {
+    background-color: #ff9f00 !important;
+}
+
+.idCard-type i.fa.fa-sort-desc {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    margin-top: -20px;
+    color: #bdbdbd;
+}
+
+.form-group .checkbox label,
+.form-group .radio label,
+.form-group label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #555;
+}
+
+.form-group select.form-control {
+    color: #555 !important;
+}
+
+.form-group select.form-control option {
+    color: #bdbdbd;
+}
+
+
+
+/* 会议简介部分 */
+
+.panel.panel-info>.panel-body ol {
+    list-style-type: none;
+}
+
+.introduction-list .link {
+    /*color: #4D4D4D;*/
+    font-weight: bold;
+    position: relative;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    border-bottom: 1px solid #ccc;
+}
+
+.introduction-list li:last-child .link {
+    border-bottom: 0;
+}
+
+.introduction-list li i {
+    font-size: 16px;
+    margin-right: 10px;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    color: #555;
+}
+
+.introduction-list li.open .link {
+    color: #1295d8;
+}
+
+.introduction-list li.open i,
+.introduction-list li.open a {
+    color: #1295d8;
+}
+
+.submenu {
+    font-size: 14px;
+    display: none;
+}
+
+.submenu li {
+    width: 90%;
+    margin-left: 10%;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    padding-left: 42px;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    color: #fff !important;
+    background: #1295d8;
+}
+
+
+
+/* 论文征集 */
+
+.submission p,
+.submission ul {
+    text-indent: 2em;
+}
+
+
+
+/* 嘉宾详情 */
+
+.professor-detail p {
+    text-indent: 2em;
+}
+
+.professor-detail img {
+    max-width: 400px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+
+
+/* 组织结构 */
+
+.organization .row .col-md-12>div {
+    margin-bottom: 30px;
+}
+
+.organization .row .col-md-12>div p {
+    margin: 0;
+}
+
+
+
+/* .个人主页 */
+
+.user-img {
+    max-width: 70px;
+    border-radius: 50%;
+}
+
+.user-info .media-left {
+    padding-right: 30px;
+}
+
+.user-info-panel ul.panel-heading {
+    border: 1px solid #1295d8;
+    margin-bottom: 0;
+}
+
+.user-info-panel ul.panel-heading:hover {
+    cursor: pointer;
+}
+
+.user-info-panel ul.panel-heading li {
+    display: inline-block;
+}
+
+.user-info-panel ul.panel-heading li:first-child i {
+    padding-right: 20px;
+}
+
+.user-info-panel .panel-body .row .thumbnail {
+    margin: 20px;
+    text-align: center;
+    border: none;
+    border-right: 1px solid #98cfcf;
+}
+
+.user-info-panel .panel-body .row .thumbnail a {
+    display: inline-block;
+    margin: 20px;
+    border-radius: 50%;
+    background-color: #1295d8;
+}
+
+.user-info-panel .panel-body .row .thumbnail.thumbnail-close a {
+    background-color: #ddd;
+}
+
+.user-info-panel .panel-body .row .thumbnail a img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.user-info-panel .panel-body .row .col-md-3:last-child .thumbnail {
+    border-right: none;
+}
+
+.user-info-panel .mymeeting-panel {
+    margin-bottom: 20px;
+}
+
+.user-info-panel .mymeeting-panel>.panel-body {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+
+
+/* 后台管理 */
+
+body#management {
+    font-size: 16px;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+body#management .form-group {
+    margin: 0;
+}
+
+body#management .form-group label.control-label {
+    font-size: 16px;
+}
+
+body#management .form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+    padding-top: 0;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body#management {
+        font-size: 12px;
+    }
+}
+
+body#management .panel {
+    padding: 10px;
+    box-shadow: none;
+}
+
+
+
+/* #wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+
+#wrapper .navbar {
+    background-color: #4d4d4d;
+}
+
+#wrapper .navbar .navbar-right {
+    margin-right: 4%;
+}
+
+#wrapper .navbar .navbar-right a {
+    margin: 10px 1px;
+    padding: 8px;
+    background-color: transparent;
+}
+
+#wrapper .navbar .navbar-right label {
+    margin: 10px 1px;
+    padding: 6px;
+    background-color: transparent;
+}
+
+#wrapper .navbar .navbar-right a:hover {
+    color: #ff9f00;
+    background-color: transparent !important;
+}
+
+#wrapper .navbar-brand {
+    padding-left: 20px;
+}
+
+#wrapper .navbar-brand>img {
+    max-width: 55%;
+    margin-top: 20px;
+}
+
+.management-content {
+    margin-top: 60px;
+}
+
+.management-content .row>div {
+    /*height: 100%;*/
+}
+
+.management-content .row .sidebar-left {
+    max-width: 220px;
+    padding: 0;
+    background-color: #3c3b3b;
+}
+
+.management-content .row .sidebar-left ul {
+    margin-top: 30px;
+}
+
+.management-content .row .sidebar-left li {
+    line-height: 20px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.management-content .row .sidebar-left li:hover {
+    background-color: #4d4d4d;
+}
+
+.management-content .row .sidebar-left li.open {
+    border-right: 3px solid #ff9f00;
+    background-color: #4d4d4d;
+    color: #ff9f00;
+}
+
+.management-content .row .sidebar-left li.open ul {
+    margin-top: 0;
+}
+
+.management-content .row .sidebar-left li.open ul>li {
+    border-bottom: none;
+    width: auto;
+}
+
+.management-content .row .sidebar-left li.open ul>li a:hover {
+    background-color: #3c3b3b;
+}
+
+.management-content .row .sidebar-left li.open a {
+    position: relative;
+    color: #ff9f00;
+}
+
+.management-content .row .sidebar-left li.open a::after {
+    position: absolute;
+    top: 26px;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 4px solid;
+    border-color: transparent transparent transparent #ff9f00;
+}
+
+.management-content .row .sidebar-left li {
+    color: #fff;
+}
+
+.management-content .row .sidebar-left li a {
+    display: inline-block;
+    padding: 20px 15px 20px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar-left {
+        width: 100% !important;
+        height: auto !important;
+    }
+    #wrapper .navbar-brand>img {
+        margin-top: 0;
+    }
+    .management-content .row .sidebar-left {
+        margin-top: -10px;
+    }
+    #wrapper .navbar-brand {
+        padding-left: 0;
+    }
+}
+
+.management-content .main-content {
+    margin-left: 2%;
+}
+
+.management-content .main-content .main-content-header {
+    line-height: 60px;
+    height: 60px;
+    margin: 20px auto;
+    color: #fff;
+    background-color: #1295d8;
+}
+
+#myTab {
+    margin: 0;
+    margin-bottom: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+#myTab>li a {
+    margin: 10px;
+    padding: 10px 0 5px 0;
+    color: #000 !important;
+}
+
+#myTab>li.active a {
+    color: #ff9f00 !important;
+    border-bottom: 1px solid #ff9f00 !important;
+}
+
+
+
+/* 我的参会劵 */
+
+.myticket-panel>.panel-body>.row .panel {
+    padding: 0 !important;
+}
+
+.myticket-panel>.panel-body>.row .panel-heading {
+    background-color: #1295d8;
+}
+
+.myticket-panel>.panel-body>.row .panel-body {
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+}
+
+.myticket-panel>.panel-body>.row .panel-body .myticket-panel-top>.pull-left img {
+    width: 50px;
+    height: auto;
+    margin-top: 9px;
+    border-radius: 50%;
+}
+
+.myticket-panel>.panel-body>.row .panel-body .myticket-panel-bottom>.pull-left a {
+    /*margin: 10px;*/
+    font-weight: bold;
+    color: #ff9f00;
+}
+
+.myticket-panel>.panel-body>.row .panel-body .myticket-panel-bottom {
+    margin-bottom: 10px;
+}
+
+.myticket-panel>.panel-body>.row .panel-body .myticket-panel-bottom>.pull-left a>label {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.myticket-panel>.panel-body>.row .panel-body .myticket-panel-bottom>.pull-right img {
+    width: 50px;
+    height: auto;
+}
+
+
+
+/* 我的参会劵详情 */
+
+.myticket-detail>.panel>.panel-body>.row {
+    width: 98%;
+    margin-left: 1%;
+    margin: 10px;
+}
+
+.myticket-detail>.panel>.panel-body>.row:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.myticket-detail .triangle {
+    position: absolute;
+    top: 58px;
+    left: 394px;
+}
+
+.myticket-detail>.panel .panel-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+
+.myticket-detail>.panel .panel-body {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.myticket-detail .myticket-detail-left {
+    margin: 20px 0;
+    padding: 0;
+    border-right: 1px solid #ddd;
+}
+
+.myticket-detail .myticket-detail-left .media {
+    width: 60%;
+    margin: auto;
+}
+
+.myticket-detail .myticket-detail-left .media .media-body p {
+    text-align: center;
+    margin: 7px 0 0 0;
+}
+
+.myticket-detail .myticket-detail-left img.media-object {
+    max-width: 70px;
+    border-radius: 50%;
+}
+
+.myticket-detail .myticket-detail-right {
+    text-align: center;
+    margin: 20px 0 20px 56px;
+    padding: 0;
+}
+
+.myticket-detail .myticket-detail-right p {
+    font-size: 48px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.myticket-detail .myticket-detail-right img {
+    width: 70px;
+    height: 70px;
+}
+
+.myticket-detail>.panel .panel-body>.row ul li {
+    padding-top: 10px;
+}
+
+
+
+/* 我的注册记录 */
+
+
+/* 注册记录详情 */
+
+.registration-record-detail .panel .row {
+    margin-top: 20px;
+}
+
+.registration-record-detail .panel table thead tr th {
+    text-align: center;
+    font-weight: normal;
+    background-color: #f2f2f2;
+}
+
+.registration-record-detail .panel table {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.registration-record-detail .panel p.clearfix {
+    padding-right: 5%;
+}
+
+
+
+/* 住房预定 */
+
+.hotel-book .thumbnail span.pull-left,
+.hotel-book .thumbnail span.pull-right label {
+    color: #ff9f00;
+}
+
+.hotel-book .thumbnail p.book-btn {
+    margin-bottom: 0;
+}
+
+.hotel-book .thumbnail p.book-btn button {
+    width: 100%;
+    background-color: #1295d8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+/* 我的展报 */
+
+.summary-header .btn-next {
+    left: 0;
+}
+
+.summary>.panel>.row {
+    margin: 2%;
+}
+
+.summary>.panel>.row>div {
+    border: 1px solid #ccc;
+    margin: 2%;
+    margin-left: 5%;
+}
+
+.summary>.panel>.row>div>ul>li {
+    border-bottom: 1px dotted #ddd;
+    padding: 10px 0;
+}
+
+.summary>.panel>.row>div>ul>li span:first-child {
+    text-align: right;
+}
+
+.summary>.panel>.row>div p.summary-btn a {
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    background-color: #1295d8;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.summary>.panel>.row>div p.summary-btn a:first-child {
+    margin: 5% 10% 5% 20%;
+}
+
+.summary form {
+    margin-top: 2%
+}
+
+button.summary-modify-submit {
+    left: 0;
+    margin: 2%;
+}
+
+.summary-detail-list li {
+    margin: 12px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+
+
+/* 个人设置 */
+
+.user-setup>.panel>.row>form>div {
+    margin-left: 5%;
+}
+
+/* zxbwj样式 */
+.zxbwj .organization .panel-body ul>li>ul{
+    text-indent: 2em;
+
+}
+

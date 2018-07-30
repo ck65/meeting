@@ -1,0 +1,5 @@
+{
+   "usingComponents": {
+      "zan-card": "../dist/card/index"
+   }
+}

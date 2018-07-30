@@ -1,0 +1,12 @@
+<!--pages/meeting/meeting.wxml-->
+<view class='search'>
+   <view class='searchInput'>
+      <input placeholder='输入关键字搜索' placeholder-class='search-placeholder' bindinput='inputValue'></input><icon style='align-self:center;margin-right:10rpx' type='search' size='20' ontap='toDetail'></icon>
+   </view>
+</view>
+<view wx:for="{{meeting}}" wx:key="id">
+  <view data-type="{{item.id}}" bindtap='onClick'>
+    <zan-card card-class="test-card" price="{{item.price}}" thumb="{{item.photo}}" title="{{item.title}}" desc="{{item.desc}}" status="{{item.palce}}">
+    </zan-card>
+  </view>
+</view>

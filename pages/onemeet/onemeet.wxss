@@ -1,0 +1,82 @@
+/* pages/onemeet/onemeet.wxss */
+.image{
+  height: 410rpx;
+  width: 750rpx;
+}
+.title{
+  font-size: 45rpx;
+  font-family:"黑体";
+  margin-left: 60rpx;
+}
+.title2{
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  font-family:"黑体";
+  margin-left: 20rpx;
+  background-color: #0387FE;
+  margin-right: 20rpx;
+}
+.text{
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+  font-size:30rpx;
+  margin-left: 10rpx;
+}
+
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 70rpx;
+  position: fixed;
+}
+.navbar .item.active{
+  color: #0387FE;
+  position: fixed;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #0387FE;
+}
+
+.content{
+  display: flex;
+  margin-left:5rpx;
+  margin-right: 5rpx;
+}
+.style{
+  width:50%;
+  height:100px;
+  margin-left:5rpx;
+  margin-right: 5rpx;
+}
+
+.style2{
+  width:150px;
+  height:130px;
+  margin-left:30rpx;
+  margin-top: 10rpx;
+}
+
+.name{
+  font-size: 30rpx;
+  margin: 5rpx;
+  margin-top: 10rpx;
+  text-align: center
+}
